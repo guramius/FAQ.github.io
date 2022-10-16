@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#B068E9, #6463E7);
+    height: 100vh;
+}
+.mainContainer {
+    width: 920px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 23px;
+    align-items: center;
+    background: #FFFFFF;
+    gap:30px
+}
+.imgContainer {
+    position: relative;
+}
+.desktopImg {
+    position: absolute;
+    top: 15%;
+    left: 0%;
+}
+.mobileImg {
+    display: none;
+}
+.bottomBlur {
+    display: none;
+}
+.dropDown {
+    padding-right: 100px;
+    width: 400px;
+}
+.dropDown h1 {
+    margin-bottom: 75px;
+}
+.dropDown div {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #E8E8EA;
+    padding-bottom: 10px;
+}
+.passive {
+    max-height: 20px;
+    overflow: hidden;
+}
+.active {
+    max-height: 100px;
+}
+.font {
+    font-weight: bold;
+}
+.paragraph {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.paragraph:hover {
+    color: #F47B56;
+    transition: all ease-out 0.3s;
+}
+.paragraph  svg {
+    margin-left: 10px;
+}
+.paragraphSVG {
+    transform: rotate(180deg);
+    transition: all ease-out 0.3s;
+}
+@media (max-width: 1200px) {
+    .mainContainer {
+        width: 760px;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 23px;
+        align-items: center;
+        background: #FFFFFF;
+        gap: 32px;
+    }
+    .dropDown {
+    padding-right: 20px;
+    width: 300px;
+    }
+}
+@media (max-width: 768px) {
+    .desktopImg {
+        display: none;
+    }
+    .rectangle {
+        display: none;
+    }
+    .mainContainer {
+        width: 360px;
+        height: 540px;
+    }
+    .mobileImg {
+        display: block;
+        position: absolute;
+        top: -400px;
+        left: 31px;
+    }
+    .bottomBlur {
+        display: block;
+        position: absolute;
+        top: -300px;
+        left: 65px;        
+    }
+    .dropDown {
+        width: 300px;
+        margin: auto;
+    }
+    .dropDown h1 {
+        text-align: center;
+    }
+}
